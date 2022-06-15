@@ -1,28 +1,30 @@
 
 body {	
-	background-color: #EDD0CA;
+	background-color: #fff;
 	margin: 0;
 	padding: 0;
-
-}
-
-header{
 }
 
 h1 {
 	style:  font-size: 50px;
 	text-align: center;
-
 }
-#imagem{
-	width: 100%;
 
+.img_produto{
+	width: 548px;
 }
-p{
+
+.frase_cima{
 	text-align: center;
 	font-size: 30px;
-
 }
+
+.frase_baixo{
+	font-size: 14px;
+	
+	text-align: center;
+}
+
  em strong {
  	color:  #363636;
  }
@@ -51,7 +53,6 @@ p{
 ul{
 	display:  inline-block;
 	vertical-align: top;
-	width: 30px;
 	margin-right: 20%;
 	
 }

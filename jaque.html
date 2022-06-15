@@ -1,29 +1,39 @@
-<!DOCTYPE html>
-<html lang= "pt-br">
-<head>
-	<meta charset="UTF-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<script src="Jaque.js"></script>
+
 	<title> Loja da Jaque </title>
 	<link rel="stylesheet" href="Jaque.css">
-
-</head>
-	
-<body>
+  </head>
+  <body>
 	<header>
-			
 		<h1>Cool Outfits </h1>
 		
-		<p><strong> "Quando você sonha grande e com todas as forças que você jamais imaginou ter, as coisas acontecem."</strong> E foi assim, no retorno do meu  intercâmbio a Dublin que eu, Jaqueline Tenfen resolvi tornar meu sonho em realidade. Em 2020 registrei a marca Cool Outfits e iniciei com uma coleção MUITO pequena,de apenas algumas peças, mal sabendo onde comprar tecidos e muito menos como iríamos transformar a malha em roupas!</p>
-				<p><em> E até hoje, toda a escolha das matérias-primas como tecidos e aviamentos, bem como o desenvolvimento da coleção incluindo o desenho(as vezes feitos a punho) de cada estampa são feitos manualmente. É um trabalho cansativo, mas feito com muita dedicação! Afinal, AMAMOS tudo isso.</em></p>
-		
-		<img id="imagem" src="header_bg.jpeg">
+		<img  src="fundo.jpeg">
 	</header>
+
+	
 		
 	<div>
 		<table class="prices"> 
-			<tr> 
-				<td>Acessórios: Á partir de R$ 9,90</td>
-				<td>Roupas: Á partir de R$ 19,90</td>
-				<td>Calçados: Á partir de R$ 29,90</td>
+			<tr>
+				<td><a href="javascript:void(0)" onclick="adicionar_produto('Calça branca', 299.99)"><img class="img_produto" src="calca.jpeg"><br>Calça branca: 299,99</a></td>
+				<td><a href="javascript:void(0)" onclick="adicionar_produto('Calça preta', 299.99)"><img class="img_produto" src="calcapreta.jpeg"><br>Calça preta: 299,99</a></td>
+				<td><a href="javascript:void(0)" onclick="adicionar_produto('Top laranja', -1)"><img class="img_produto" src="conjunto.jpeg"><br>Top laranja: ESGOTADO</a></td>
+				<td><a href="javascript:void(0)" onclick="adicionar_produto('Conjunto preto', 299.99)"><img class="img_produto" src="conjunto_preto.jpeg"><br>Conjunto preto: 599,99</a></td>
 			</tr>
 		</table>
 
@@ -46,9 +56,35 @@
 				 </form> 
 			</div>
 		<ul>
-					<li> <a href="contato.html"> Contato </a></li>
-				</ul>
+			<li> <a href="contato.html"> Contato </a></li>
+			<li> <a href="javascript:void(0)" data-toggle="modal" data-target="#modalSobreALoja">
+				Saiba mais sobre a Cool Outfits</a>
+			</button></li>
+		</ul>
 	</div>
 
-</body>
+<!-- Modal -->
+<div class="modal fade" id="modalSobreALoja" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Sobre a CoolOutfits</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+			<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<p class="frase_cima"><strong> "Quando você sonha grande e com todas as forças que você jamais imaginou ter, as coisas acontecem."</strong> </p>
+			<p class="frase_baixo">E foi assim, no retorno do meu  intercâmbio a Dublin que eu, Jaqueline Tenfen resolvi tornar meu sonho em realidade. Em 2020 registrei a marca Cool Outfits e iniciei com uma coleção MUITO pequena,de apenas algumas peças, mal sabendo onde comprar tecidos e muito menos como iríamos transformar a malha em roupas!</p>
+			<p><em> E até hoje, toda a escolha das matérias-primas como tecidos e aviamentos, bem como o desenvolvimento da coleção incluindo o desenho(as vezes feitos a punho) de cada estampa são feitos manualmente. É um trabalho cansativo, mas feito com muita dedicação! Afinal, AMAMOS tudo isso.</em></p>
+
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Continuar comprando</button>
+		</div>
+		</div>
+	</div>
+    
+  </body>
 </html>
+
